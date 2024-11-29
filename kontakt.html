@@ -60,11 +60,11 @@
 					<p class="fN kN">Zakazivanje grupnih obilazaka</p>
                     <div>
                         <div id="IPE">
-                            <input type="text" id="imeIP" name="imeIP" placeholder="Ime i prezime vođe" required oninvalid="this.setCustomValidity('Spojeno unesite Ime i Prezime')"/>
-							<input type="email" id="email" name="email" placeholder="E-mail" required oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
+                            <input type="text" id="imeIP" name="name" placeholder="Ime i prezime vođe" required autocomplete="on" oninvalid="this.setCustomValidity('Spojeno unesite Ime i Prezime')"/>
+							<input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
                         </div>
                         <div id="TO">
-                            <input type="tel" id="tel" name="telefon" placeholder="Broj telefona" maxlength="10" required oninvalid="this.setCustomValidity('Pravilno nesite br telefona, pr. 0644444444')"/>
+                            <input type="tel" id="tel" name="telefon" placeholder="Broj telefona" maxlength="10" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno nesite br telefona, pr. 0644444444')"/>
 							<input type="text" id="brOsoba" name="brOsoba" placeholder="Broj osoba" required required oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
                         </div>
                     </div>
