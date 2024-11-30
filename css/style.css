@@ -94,11 +94,11 @@
 	font-size:30px;
 	padding-top:100px;
 	border-bottom:4px dashed #7b9aa0;
-	animation-name: example;
+	animation-name: cit;
 	animation-duration: 10s;
 }
 
-@keyframes example {
+@keyframes cit {
   0% {margin-left:100%;}
   100% {margin-left:0%;}
 }
