@@ -23,68 +23,87 @@
 		<title>Planetarijum Astra | Naslovna</title>
 	</head>
 	<body>
-		<div class="dogadjaj">
-			<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
-		</div>
-		<div class="meni f-rowSR">
-			<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
-				<div class="logoT"><a href="index.html" class="zLink">Astra</a></div>
+		<audio autoplay controls loop preload="auto">
+			<source src="sounds/svemir.mp3" type="audio/mpeg">
+			<source src="sounds/svemir.ogg" type="audio/ogg">
+			Vaš bowser ne podržava HTML5 audio element.
+		</audio>
+		<header>
+			<div class="dogadjaj">
+				<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
 			</div>
-			<div class="bL">					
-				<ul class="f-rowSB">
-					<li><a href="index.html" class="zLink active">NASLOVNA</a><hr/></li>
-					<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
-					<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
-					<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
-				</ul>
+			<div class="meni f-rowSR">
+				<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
+					<div class="logoT"><a href="index.html" class="zLink">Astra</a></div>
+				</div>
+				<nav class="bL">					
+					<ul class="f-rowSB">
+						<li><a href="index.html" class="zLink active">NASLOVNA</a><hr/></li>
+						<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
+						<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
+						<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
-		<div id="bg-img">
-			<p id="citat">PER ASPERA AD ASTRA</p>
-			<div id="cover">
-				<div id="tekst">
-					<h1>Planetarijum Astra</h1>
-					<h2>Doživite jedinstveno Astralno iskustvo!</h2>
+		</header>
+		<main>
+			<div class="boxPitanje">
+				<i id="com" class="fa-solid fa-comment f-rowSS"></i>
+				<div id="pitanje" class="nevid">
+				<p><strong>Pozdrav!</strong> Tu smo da odgovorimo na sva vaša pitanja!</p>
+				<form id="formP" action="pitanje.php" method="GET">
+					<input id="inPitanje" type="text" name="inPitanje" class="cPitanje nevid nLE" placeholder="Vaše pitanje..."/>
+					<input id="bPitanje" type="button" name="bPitanje" class="cPitanje nevid nLS" value="Šalji"/>
+				</form>
 				</div>
 			</div>
-			<div class="mainIO f-rowSS">
-				<img src="img/About1.jpg" alt="opservatorija nocu"/>
-				<div class="mainIOT">
-					<p id="mainIOH" class="fN">O NAMA</p>
-					<p>Planetarijum Astra je mesto koje omogućava realizaciju posmatračke aktivnosti i obradu dobijenih podataka i fotografija.</p>
-					<p>U okviru našeg objekta se, pored opservatorije, nalaze i biblioteka i suvenirnica.</p>
-					<p>Postojimo od 2005. godine.</p><p>Nalazimo se na brdu Gardoš u Zemunu.</p>
+			<div id="bg-img">
+				<p id="citat">PER ASPERA AD ASTRA</p>
+				<div id="cover">
+					<hgroup id="tekst">
+						<h1>Planetarijum Astra</h1>
+						<h2>Doživite jedinstveno Astralno iskustvo!</h2>
+					</hgroup>
 				</div>
-			</div>
-		</div>
-		<div id="bg-img2">
-			<div id="mainIV">
-				<p class="fN">VESTI</p>
-				<div id="vesti" class="f-rowSR">
-					<div class="vest f-colS">
-						<p class="vestN">Noć meteora</p>
-						<p>Nebeski spektakl i ove godine biće aktuelan od 10. do 13. avgusta 2024, a moći će da se vidi i u Srbiji.</p>
-						<p class="vestD">10.08.2024.</p>
-					</div>
-					<div class="vest f-colS">
-						<p class="vestN">Vatreno nebo</p>
-						<p>Na nebu iznad pojedinih delova Srbije vidljiva je polarna svetlost koja je retkost za naše područje.</p>
-						<p class="vestD">10.10.2024.</p>
-					</div>
-					<div class="vest f-colS">
-						<p class="vestN">Lansiran drveni satelit</p>
-						<p>Prvi drveni satelit lansiran je u svemir, u okviru misije snabdevanja Međunarodne svemirske stanice.</p>
-						<p class="vestD">18.11.2024.</p>
-					</div>
-					<div class="vest f-colS">
-						<p class="vestN">Srbija i Kazahstan</p>
-						<p>Srbija i Kazahstan potpisale su sporazum o saradnji u istraživanju i korišćenju kosmičkog prostora.</p>
-						<p class="vestD">19.11.2024.</p>
+				<div class="mainIO f-rowSS">
+					<img src="img/About1.jpg" alt="opservatorija nocu"/>
+					<div class="mainIOT">
+						<p id="mainIOH" class="fN">O NAMA</p>
+						<p>Planetarijum Astra je mesto koje omogućava realizaciju posmatračke aktivnosti i obradu dobijenih podataka i fotografija.</p>
+						<p>U okviru našeg objekta se, pored opservatorije, nalaze i biblioteka i suvenirnica.</p>
+						<p>Postojimo od 2005. godine.</p><p>Nalazimo se na brdu Gardoš u Zemunu.</p>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="foot">
+			<div id="bg-img2">
+				<div id="mainIV">
+					<p class="fN">VESTI</p>
+					<article id="vesti" class="f-rowSR">
+						<div class="vest f-colS">
+							<p class="vestN">Noć meteora</p>
+							<p>Nebeski spektakl i ove godine biće aktuelan od 10. do 13. avgusta 2024, a moći će da se vidi i u Srbiji.</p>
+							<p class="vestD">10.08.2024.</p>
+						</div>
+						<div class="vest f-colS">
+							<p class="vestN">Vatreno nebo</p>
+							<p>Na nebu iznad pojedinih delova Srbije vidljiva je polarna svetlost koja je retkost za naše područje.</p>
+							<p class="vestD">10.10.2024.</p>
+						</div>
+						<div class="vest f-colS">
+							<p class="vestN">Lansiran drveni satelit</p>
+							<p>Prvi drveni satelit lansiran je u svemir, u okviru misije snabdevanja Međunarodne svemirske stanice.</p>
+							<p class="vestD">18.11.2024.</p>
+						</div>
+						<div class="vest f-colS">
+							<p class="vestN">Srbija i Kazahstan</p>
+							<p>Srbija i Kazahstan potpisale su sporazum o saradnji u istraživanju i korišćenju kosmičkog prostora.</p>
+							<p class="vestD">19.11.2024.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer id="foot">
 			<div id="footG" class="meni f-rowSR">
 				<div class="logoT fLT f-rowSS f-L"><a href="index.html" class="zLink">Astra</a>
 					<div class="logo"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a></div>
@@ -99,14 +118,14 @@
                 </div>
 				<div id="dBL">
                     <p class="fN">Brzi linkovi</p>
-                    <div class="bL fL">
+                    <nav class="bL fL">
                         <ul>
                             <li><a href="index.html" class="zLink active">NASLOVNA</a><hr/></li>
 							<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
 							<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
 							<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div id="dN">
                     <p class="fN">Newsletter</p>
@@ -128,6 +147,6 @@
 				</div>
 				<p>Copyright &copy 2024 Kristijan Madić 10/24. All Rights Reserved</p>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>

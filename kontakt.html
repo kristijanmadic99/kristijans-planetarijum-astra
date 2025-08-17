@@ -23,59 +23,78 @@
 		<title>Planetarijum Astra | Kontakt</title>
 	</head>
 	<body>
-		<div class="dogadjaj">
-			<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
-		</div>
-		<div class="meni f-rowSR">
-			<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
-				<div class="logoT"><a href="index.html" class="zLink"><h1 class="dva">Astra</h1></a></div>
+		<audio autoplay controls loop preload="auto">
+			<source src="sounds/svemir.mp3" type="audio/mpeg">
+			<source src="sounds/svemir.ogg" type="audio/ogg">
+			Vaš bowser ne podržava HTML5 audio element.
+		</audio>
+		<header>
+			<div class="dogadjaj">
+				<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
 			</div>
-			<div class="bL">					
-				<ul class="f-rowSB">
-					<li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
-					<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
-					<li><a href="kontakt.html" class="zLink active">KONTAKT</a><hr/></li>
-					<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
-				</ul>
+			<div class="meni f-rowSR">
+				<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
+					<div class="logoT"><a href="index.html" class="zLink"><h1 class="dva">Astra</h1></a></div>
+				</div>
+				<nav class="bL">					
+					<ul class="f-rowSB">
+						<li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
+						<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
+						<li><a href="kontakt.html" class="zLink active">KONTAKT</a><hr/></li>
+						<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
-		<div id="bg-K" class="bg-D">
-			<h2 class="n2">KONTAKT</h2>
-			<div class="main-D f-rowSR">
-				<div id="main-KK">
-                    <p class="fN kN">Kontaktirajte nas</p>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Sinđelićeva 31, Beograd 11080</p>
-                    <p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+381644444444" class="zLink kon"> 064 4444444</a></p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@astra.rs" class="zLink kon"> info@astra.rs</a></p>
+		</header>
+		<main>
+			<div class="boxPitanje">
+				<i id="com" class="fa-solid fa-comment f-rowSS"></i>
+				<div id="pitanje" class="nevid">
+				<p><strong>Pozdrav!</strong> Tu smo da odgovorimo na sva vaša pitanja!</p>
+				<form id="formP" action="pitanje.php" method="GET">
+					<input id="inPitanje" type="text" name="inPitanje" class="cPitanje nevid nLE" placeholder="Vaše pitanje..."/>
+					<input id="bPitanje" type="button" name="bPitanje" class="cPitanje nevid nLS" value="Šalji"/>
+				</form>
 				</div>
-				<div id="main-KR">
-					<p class="fN kN">Radno vreme</p>
-					<p>Ponedeljak – Nedelja 9:00 – 21:00</p>
-					<p>31.12. – 9:00 – 17:00</p>
-					<p>06.01. – 9:00 – 17:00</p>
-					<p>07.01. – Ne radimo</p>
-					<p>Uskrs – Ne radimo</p>
-				</div>
-				<form action="zakazivanje.php" method="GET" id="forma">
-					<p class="fN kN">Zakazivanje grupnih obilazaka</p>
-                    <div>
-                        <div id="IPE">
-                            <input type="text" id="imeIP" name="name" placeholder="Ime i prezime vođe" required autocomplete="on" oninvalid="this.setCustomValidity('Spojeno unesite Ime i Prezime')"/>
-							<input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
-                        </div>
-                        <div id="TO">
-                            <input type="tel" id="tel" name="telefon" placeholder="Broj telefona" maxlength="10" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno nesite br telefona, pr. 0644444444')"/>
-							<input type="text" id="brOsoba" name="brOsoba" placeholder="Broj osoba" required required oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
-                        </div>
-                    </div>
-					<div id="formD" class="f-colS">
-						<textarea name="napomena" id="napomena" rows="7" placeholder="Napomena"></textarea>
-						<input type="submit" id="subD" name="subD" value="Pošalji"/>
+			</div>
+			<div id="bg-K" class="bg-D">
+				<h2 class="n2">KONTAKT</h2>
+				<div class="main-D f-rowSR">
+					<div id="main-KK">
+						<p class="fN kN">Kontaktirajte nas</p>
+						<p><i class="fa fa-map-marker" aria-hidden="true"></i> Sinđelićeva 31, Beograd 11080</p>
+						<p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+381644444444" class="zLink kon"> 064 4444444</a></p>
+						<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@astra.rs" class="zLink kon"> info@astra.rs</a></p>
 					</div>
-                 </form>
+					<div id="main-KR">
+						<p class="fN kN">Radno vreme</p>
+						<p>Ponedeljak – Nedelja 9:00 – 21:00</p>
+						<p>31.12. – 9:00 – 17:00</p>
+						<p>06.01. – 9:00 – 17:00</p>
+						<p>07.01. – Ne radimo</p>
+						<p>Uskrs – Ne radimo</p>
+					</div>
+					<form action="zakazivanje.php" method="GET" id="forma">
+						<p class="fN kN">Zakazivanje grupnih obilazaka</p>
+						<div>
+							<div id="IPE">
+								<input type="text" id="imeIP" name="name" placeholder="Ime i prezime vođe" required autocomplete="on" oninvalid="this.setCustomValidity('Spojeno unesite Ime i Prezime')"/>
+								<input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
+							</div>
+							<div id="TO">
+								<input type="tel" id="tel" name="telefon" placeholder="Broj telefona" maxlength="10" required autocomplete="on" oninvalid="this.setCustomValidity('Pravilno nesite br telefona, pr. 0644444444')"/>
+								<input type="text" id="brOsoba" name="brOsoba" placeholder="Broj osoba" required required oninvalid="this.setCustomValidity('Pravilno unesite email')"/>
+							</div>
+						</div>
+						<div id="formD" class="f-colS">
+							<textarea name="napomena" id="napomena" rows="7" placeholder="Napomena"></textarea>
+							<input type="submit" id="subD" name="subD" value="Pošalji"/>
+						</div>
+					</form>
+				</div>
 			</div>
-		</div>
-		<div id="foot">
+		</main>
+		<footer id="foot">
 			<div id="footG" class="meni f-rowSR">
 				<div class="logoT fLT f-rowSS f-L"><a href="index.html" class="zLink">Astra</a>
 					<div class="logo"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a></div>
@@ -90,14 +109,14 @@
                 </div>
 				<div id="dBL">
                     <p class="fN">Brzi linkovi</p>
-                    <div class="bL fL">
+                    <nav class="bL fL">
                         <ul>
                             <li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
 							<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
 							<li><a href="kontakt.html" class="zLink active">KONTAKT</a><hr/></li>
 							<li><a href="autor.html" class="zLink">AUTOR</a><hr/></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div id="dN">
                     <p class="fN">Newsletter</p>
@@ -119,6 +138,6 @@
 				</div>
 				<p>Copyright &copy 2024 Kristijan Madić 10/24. All Rights Reserved</p>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>

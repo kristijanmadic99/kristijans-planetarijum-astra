@@ -23,32 +23,51 @@
 		<title>Planetarijum Astra | O Autoru</title>
 	</head>
 	<body>
-		<div class="dogadjaj">
-			<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
-		</div>
-		<div class="meni f-rowSR">
-			<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
-				<div class="logoT"><a href="index.html" class="zLink"><h1 class="dva">Astra</h1></a></div>
+		<audio autoplay controls loop preload="auto">
+			<source src="sounds/svemir.mp3" type="audio/mpeg">
+			<source src="sounds/svemir.ogg" type="audio/ogg">
+			Vaš bowser ne podržava HTML5 audio element.
+		</audio>
+		<header>
+			<div class="dogadjaj">
+				<p>13.01.2025. prolazak komete: C/2024 G3 (ATLAS)</p>
 			</div>
-			<div class="bL">					
-				<ul class="f-rowSB">
-					<li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
-					<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
-					<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
-					<li><a href="autor.html" class="zLink active">AUTOR</a><hr/></li>
-				</ul>
+			<div class="meni f-rowSR">
+				<div class="logo f-rowSS f-L"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a>
+					<div class="logoT"><a href="index.html" class="zLink"><h1 class="dva">Astra</h1></a></div>
+				</div>
+				<nav class="bL">					
+					<ul class="f-rowSB">
+						<li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
+						<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
+						<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
+						<li><a href="autor.html" class="zLink active">AUTOR</a><hr/></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
-		<div id="bg-A" class="bg-D">
-			<h2 class="n2">O AUTORU</h2>
-			<div id="main-A" class="main-D f-rowSS">
-				<img src="img/Autor.jpg" alt="Slika autora"/>
-				<div id="main-AT">
-					<p>Zovem se <span class="vazno">Kristijan Madić</span>. Završio sam Srednju elektrotehničku školu "Zemun". Student sam na Visokoj školi za informacione i komunikacione tehnologije u Beogradu na smeru Internet tehnologije. Indeks: <span class="vazno">10/24</span></p>
+		</header>
+		<main>
+			<div class="boxPitanje">
+				<i id="com" class="fa-solid fa-comment f-rowSS"></i>
+				<div id="pitanje" class="nevid">
+				<p><strong>Pozdrav!</strong> Tu smo da odgovorimo na sva vaša pitanja!</p>
+				<form id="formP" action="pitanje.php" method="GET">
+					<input id="inPitanje" type="text" name="inPitanje" class="cPitanje nevid nLE" placeholder="Vaše pitanje..."/>
+					<input id="bPitanje" type="button" name="bPitanje" class="cPitanje nevid nLS" value="Šalji"/>
+				</form>
 				</div>
 			</div>
-		</div>
-		<div id="foot">
+			<div id="bg-A" class="bg-D">
+				<h2 class="n2">O AUTORU</h2>
+				<div id="main-A" class="main-D f-rowSS">
+					<img src="img/Autor.jpg" alt="Slika autora"/>
+					<div id="main-AT">
+						<p>Zovem se <span class="vazno">Kristijan Madić</span>. Završio sam Srednju elektrotehničku školu "Zemun". Student sam na Visokoj školi za informacione i komunikacione tehnologije u Beogradu na smeru Internet tehnologije. Indeks: <span class="vazno">10/24</span></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="foot">
 			<div id="footG" class="meni f-rowSR">
 				<div class="logoT fLT f-rowSS f-L"><a href="index.html" class="zLink">Astra</a>
 					<div class="logo"><a href="index.html" class="zLink"><img src="img/logo.png" alt="logo"/></a></div>
@@ -63,14 +82,14 @@
                 </div>
 				<div id="dBL">
                     <p class="fN">Brzi linkovi</p>
-                    <div class="bL fL">
+                    <nav class="bL fL">
                         <ul>
                             <li><a href="index.html" class="zLink">NASLOVNA</a><hr/></li>
 							<li><a href="oNama.html" class="zLink">O NAMA</a><hr/></li>
 							<li><a href="kontakt.html" class="zLink">KONTAKT</a><hr/></li>
 							<li><a href="autor.html" class="zLink active">AUTOR</a><hr/></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div id="dN">
                     <p class="fN">Newsletter</p>
@@ -92,6 +111,6 @@
 				</div>
 				<p>Copyright &copy 2024 Kristijan Madić 10/24. All Rights Reserved</p>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>
